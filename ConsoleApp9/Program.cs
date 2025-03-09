@@ -263,7 +263,7 @@ namespace ConsoleApp9
              */
 
             Exception exception = new Exception("Произошло исключение в БД");
-            exception.Data.Add("Дата создания исключения", DateTime.Now)
+            exception.Data.Add("Дата создания исключения", DateTime.Now);
             exception.HelpLink = "www.google.com";        }
     }
 }
