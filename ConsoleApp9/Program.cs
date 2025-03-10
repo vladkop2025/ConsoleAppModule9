@@ -32,18 +32,18 @@ namespace ConsoleApp9
             Employee empl3 = new Employee()
             {
                 ID = 57,
-                Name = "Николай", // Исправлено
+                Name = "Николай", 
                 Expirience = 4,
                 Salary = 15000
             };
 
             List<Employee> IsEmployees = new List<Employee>();
-            IsEmployees.Add(empl1); // Исправлено
+            IsEmployees.Add(empl1); 
             IsEmployees.Add(empl2);
             IsEmployees.Add(empl3);
 
             ELigibleToPromotion eligibleToPromotion = Promote;
-            Employee.PromoteEmployee(IsEmployees, eligibleToPromotion); // Исправлено
+            Employee.PromoteEmployee(IsEmployees, eligibleToPromotion); 
         }
 
         public static bool Promote(Employee employee)
@@ -65,9 +65,9 @@ namespace ConsoleApp9
             public int Expirience { get; set; }
             public int Salary { get; set; }
 
-            public static void PromoteEmployee(List<Employee> listEmployees, ELigibleToPromotion IsEmployeeEligible) // Исправлено
+            public static void PromoteEmployee(List<Employee> listEmployees, ELigibleToPromotion IsEmployeeEligible) 
             {
-                foreach (Employee employee in listEmployees) // Исправлено
+                foreach (Employee employee in listEmployees) 
                 {
                     if (IsEmployeeEligible(employee))
                         Console.WriteLine("Employee {0} Promoted", employee.Name);
