@@ -1014,73 +1014,7 @@ class Program
         }
     }
             */
-
-            Employee empl1 = new Employee()
-            {
-                ID = 55,
-                Name = "Алексей",
-                Expirience = 5,
-                Salary = 20000
-            };
-
-            Employee empl2 = new Employee()
-            {
-                ID = 56,
-                Name = "Михаил",
-                Expirience = 2,
-                Salary = 10000
-            };
-
-            Employee empl3 = new Employee()
-            {
-                ID = 57,
-                Name = "Николоай",
-                Expirience = 4,
-                Salary = 15000
-            };
-
-            List<Employee> IsEmployees = new List<Employee>();
-            ListEmployees.Add(empl1);
-            ListEmployees.Add(empl2);
-            ListEmployees.Add(empl3);
-
-            ELigibleToPromotion eligibleToPromotion = Promote;
-            Employee.PromoteEmployee(k=listEmployees, eligibleToPromotion);
-
-
-        }
-
-        public delegate bool ELigibleToPromotion(Employee EmployeeToPromotion);
-
-        public static bool Promote(Employee employee)
-        {
-            if (employee.Salary > 10000)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
-
-    public class Employee
-        {
-            public int ID { get; set; }
-            public string Name { get; set; }
-            public int Expirience { get; set; }
-            public int Salary { get; set; }
-
-            public static void PromoteEmployee(List<Employee> listEmployees, eligibleToPromotion IsEmployeeEligible)
-            {
-                foreach (Employee in listEmployees)
-                {
-                    if (IsEmployeeEligible(employee))
-                        Console.WriteLine("Employee {0} Promoted", employee.Name);
-                }
-            }
-        }
+        }    
 
     }
 
