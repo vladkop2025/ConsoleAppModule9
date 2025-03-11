@@ -28,7 +28,14 @@ namespace ConsoleApp9
             //--------------------------------------      
 
             // Список фамилий
-            List<string> surnames = new List<string> { "Иванов", "Петров", "Сидоров", "Кузнецов", "Васильев" };
+            List<string> surnames = new List<string> 
+            { 
+                "Иванов", 
+                "Петров", 
+                "Сидоров", 
+                "Кузнецов", 
+                "Васильев" 
+            };
 
             // Создаем объект сортировщика
             SurnameSorter sorter = new SurnameSorter(surnames);
