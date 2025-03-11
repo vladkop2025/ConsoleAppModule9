@@ -28,13 +28,13 @@ namespace ConsoleApp9
             //--------------------------------------      
 
             // Список фамилий
-            List<string> surnames = new List<string> 
-            { 
-                "Иванов", 
-                "Петров", 
-                "Сидоров", 
-                "Кузнецов", 
-                "Васильев" 
+            List<string> surnames = new List<string>
+            {
+                "Иванов",
+                "Петров",
+                "Сидоров",
+                "Кузнецов",
+                "Васильев"
             };
 
             // Создаем объект сортировщика
@@ -63,7 +63,7 @@ namespace ConsoleApp9
                     Console.WriteLine($"Ошибка: {ex.Message}");
                 }
                 finally
-                {                    
+                {
                     //Console.WriteLine("Программа завершена.");
                 }
             }
